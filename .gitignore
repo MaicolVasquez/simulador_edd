@@ -1,0 +1,9 @@
+# Compilados de C++
+*.o
+*.out
+*.exe
+*.wasm
+
+# Archivos del SO
+.DS_Store
+Thumbs.db
