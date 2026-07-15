@@ -102,3 +102,41 @@ body {
 .btn.eliminar:hover {
     background-color: #c0392b;
 }
+
+.area-grafica {
+    min-height: 320px;
+    border: 2px dashed #bdc3c7;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fafafa;
+    position: relative;
+    overflow: auto;
+}
+
+.mensaje-vacio {
+    color: #7f8c8d;
+    font-style: italic;
+    text-align: center;
+    padding: 2rem;
+}
+
+.caja-texto {
+    min-height: 100px;
+    background-color: #ecf0f1;
+    border-left: 4px solid #3498db;
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+.caja-texto p {
+    color: #2c3e50;
+}
+
+.pie {
+    text-align: center;
+    padding: 1rem;
+    color: #7f8c8d;
+    font-size: 0.85rem;
+}
