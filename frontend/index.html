@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Estructuras de Datos</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="encabezado">
+        <h1>Simulador de Estructuras de Datos</h1>
+        <p>Visualiza paso a paso Pila, Cola, Lista y Árbol Binario</p>
+    </header>
+
+    <main class="contenedor">
+        <section class="panel-control">
+            <h2>Panel de control</h2>
+            <div class="botones">
+                <button class="btn" data-estructura="pila">Pila</button>
+                <button class="btn" data-estructura="cola">Cola</button>
+                <button class="btn" data-estructura="lista">Lista</button>
+                <button class="btn" data-estructura="arbol">Árbol</button>
+            </div>
+            <div class="entrada">
+                <input type="number" id="valor" placeholder="Ingresa un número">
+                <button class="btn insertar">Insertar</button>
+                <button class="btn eliminar">Eliminar</button>
+            </div>
+        </section>
+
+        <section class="visor" id="visor">
+            <h2>Visualización</h2>
+            <div class="area-grafica" id="area-grafica">
+                <p class="mensaje-vacio">Selecciona una estructura para comenzar</p>
+            </div>
+        </section>
+
+        <section class="explicacion" id="explicacion">
+            <h2>Explicación paso a paso</h2>
+            <div class="caja-texto" id="caja-texto">
+                <p>Aquí aparecerá la narración de cada operación.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pie">
+        <p>Proyecto colaborativo - Estructuras de Datos</p>
+    </footer>
+</body>
+</html>
