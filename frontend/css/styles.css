@@ -1,0 +1,164 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f6fa;
+    color: #2c3e50;
+    line-height: 1.6;
+}
+
+.encabezado {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 1rem;
+}
+
+.encabezado h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.3rem;
+}
+
+.encabezado p {
+    font-size: 0.95rem;
+    opacity: 0.9;
+}
+
+.contenedor {
+    max-width: 1100px;
+    margin: 1.5rem auto;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.panel-control,
+.visor,
+.explicacion {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.2rem;
+}
+
+.panel-control h2,
+.visor h2,
+.explicacion h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+    color: #34495e;
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 0.4rem;
+}
+
+.botones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.entrada {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.entrada input {
+    padding: 0.5rem;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    font-size: 1rem;
+    flex: 1;
+    min-width: 140px;
+}
+
+.btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    transition: background-color 0.2s;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+
+.btn.eliminar {
+    background-color: #e74c3c;
+}
+
+.btn.eliminar:hover {
+    background-color: #c0392b;
+}
+
+.area-grafica {
+    min-height: 320px;
+    border: 2px dashed #bdc3c7;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fafafa;
+    position: relative;
+    overflow: auto;
+}
+
+.mensaje-vacio {
+    color: #7f8c8d;
+    font-style: italic;
+    text-align: center;
+    padding: 2rem;
+}
+
+.caja-texto {
+    min-height: 100px;
+    background-color: #ecf0f1;
+    border-left: 4px solid #3498db;
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+.caja-texto p {
+    color: #2c3e50;
+}
+
+.pie {
+    text-align: center;
+    padding: 1rem;
+    color: #7f8c8d;
+    font-size: 0.85rem;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+    .encabezado h1 {
+        font-size: 1.4rem;
+    }
+
+    .botones,
+    .entrada {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .btn,
+    .entrada input {
+        width: 100%;
+    }
+
+    .area-grafica {
+        min-height: 240px;
+    }
+}
